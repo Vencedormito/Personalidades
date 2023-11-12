@@ -1,0 +1,477 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+header, header div , main ,#Grande ,.Specialdiv , .Subdiv, a, .conteudo , #botao {
+  display: flex;
+}
+header, header div {
+  align-items: center;
+}
+
+header, .Subdiv {
+  width: 100%;
+}
+header div, #botao , .Subdiv,.Specialdiv {
+  flex-direction: row;
+}
+header {
+  height: 60px;
+  background-color: black;
+}
+
+
+header h3 {
+flex:80%;
+
+margin-left: 8px;
+}
+
+header div {
+
+  flex:20%;
+
+  justify-content: center;
+
+}
+
+
+header div p a {
+  padding-top: 5px;
+  color: white;
+  margin: unset;
+  text-decoration: none;
+
+}
+
+#p1 {
+  padding-left: 80px;
+
+
+}
+
+#p2 {
+  padding-left: 8px;
+  border-inline: 1px solid white;
+  border-inline-end: none;
+
+}
+
+header h3 {
+  color: white;
+}
+
+main {
+
+ 
+  width: 88%;
+  background-color: white;
+  text-align: center;
+  margin: 0;  
+margin-left: 80px;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.carousel-caption {
+  opacity: 90%;
+  background-color: rgba(92, 92, 90, 0.8);
+  border-radius: 40px;
+  color: white;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  border-radius: 10px;
+  background-color: black;
+}
+.carousel-caption p {
+  color: white;
+}
+#Grande img {
+  width: 80vw;
+  height: 36vw;
+}
+
+/* imagem do #Grande
+height: 500px;
+  width: 1200px; */
+
+/*
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+  } */
+
+#Grande {
+ 
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 30px;
+
+  
+  
+}
+
+.Specialdiv {
+
+  margin-top: 0px;
+  margin: 0;
+  margin-top: 12px;
+
+}
+
+.Subdiv p {
+  font-size: 1.50vw;
+}
+
+.Subdiv {
+
+  margin: 0;
+  flex: 33%;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 0px;
+  margin: 5px;
+  background-color: #ededed;
+  border-radius: 40px;
+  height: auto;
+
+}
+
+a {
+
+
+  flex-direction: column;
+
+  text-decoration: none;
+
+}
+
+a h2:hover {
+  color: blue;
+}
+
+p, h2 {
+  color: black;
+  text-decoration: none;
+}
+
+.Subdiv a {
+  margin: 15px;
+  margin-bottom: 0px;
+}
+
+.Subdiv a img {
+  margin-top: 40px;
+  width: 10vw;
+  height: 10vw;
+
+}
+
+.Subdiv a p {
+
+  margin-left: 6px;
+}
+
+/*
+        align-items: baseline;
+    padding-right: 240px;
+    background-color: blue;
+  width: 395px;
+   height: 160px; 
+   background-color: blue;
+ */
+
+.conteudo {
+  flex-direction: column;
+  flex: auto;
+  display: none;
+}
+
+#botao {
+  align-items: start;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
+#first {
+  display: block;
+
+}
+
+#botao button {
+
+  color: white;
+  cursor: pointer;
+  width: 10vw;
+  height: 3vw;
+  background-color:  #5E93A4;
+  border-radius: 6px;
+  margin: 2px;
+
+}
+
+#botao button p {
+
+
+  color: aliceblue;
+}
+
+#Faraday:hover {
+
+  animation: ease 5s  rgb infinite alternate-reverse ;
+
+ }
+
+ @keyframes rgb {
+ 0% {
+      font-size: 36px ;
+  color: black     
+
+ }
+    25% {
+   color:  green;
+
+    }
+
+    50% {
+      color: red;
+    }
+    75% {
+        color: blue;
+    }
+    
+    100% {
+      font-size: 30px;
+    color: black
+    }
+ 
+
+
+ }
+
+
+/*
+  #myBtn:hover {
+    background-color: #555;
+  }  */
+@media only screen and (max-width:1024px) {
+
+
+  #Grande img {
+    width: 1000px;
+  }
+
+  #botao {
+    margin-left: 80%;
+  }
+
+}
+
+@media only screen and (max-width:800px) {
+  main {
+    margin-left: 6px;
+
+    width: 95%;
+  }
+
+  #Grande {
+    width: 100%;
+  }
+
+  #Grande img {
+    width: 750px;
+  }
+
+  .Subdiv h2 {
+    font-size: 13px;
+  }
+
+  #botao {
+    margin-left: 80%;
+  }
+
+  .Subdiv p {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width:600px) {
+
+
+  main {
+    margin-left: 0;
+    width: 100%;
+    border: none;
+    height: auto;
+
+  }
+
+  .Subdiv h2 {
+    display: flex;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .Subdiv {
+    width: 100%;
+  }
+
+  header a {
+    margin: 2px;
+
+  }
+
+  #p1 {
+ padding-left: 120px ;
+  }
+
+  #p2 {
+    margin-left: 3px;
+
+  }
+
+  header h3 {
+  flex: 40%;
+  font-size: 11.5px;
+  }
+
+
+  header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   flex:60%;
+
+
+  }
+
+  header {
+    flex-direction: row;
+
+
+
+
+  }
+
+
+
+ 
+
+  .Subdiv a img {
+    padding-top: 0px;
+  }
+
+  .Subdiv a {
+
+
+
+  }
+
+  .Subdiv a div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .Subdiv div a {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .Subdiv div {
+    display: flex;
+
+  }
+
+  .Specialdiv {
+    flex-direction: column;
+    flex: 50%;
+    border: none;
+    margin: 0px;
+
+
+  }
+
+  .Subdiv a img {
+    margin-top: 0px;
+  }
+
+  .Subdiv {
+    border: none;
+
+    flex-direction: row;
+    padding-right: 70px;
+    width: 96%;
+
+  }
+
+  #Grande img {
+    width: 100%;
+  }
+
+  #Grande {
+    height: 300px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  #Grande img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .carousel-control-prev {}
+
+  #botao button {
+    width: auto;
+    height: auto;
+
+  }
+
+
+  .Subdiv p {
+    font-size: 3vw;
+  }
+
+  #botao {
+    display: flex;
+    flex-direction: row;
+
+
+
+  }
+
+  #botao button {
+
+    height: 6vw;
+  }
+
+  #myBtn {
+    display: none;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
+    padding: 0;
+
+  }
+}
