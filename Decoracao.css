@@ -271,48 +271,61 @@ p, h2 {
   #myBtn:hover {
     background-color: #555;
   }  */
-@media only screen and (max-width:1024px) {
+@media only screen and (min-device-width:1024px) {
 
 
-  #Grande img {
-    width: 1000px;
-  }
+  
 
   #botao {
     margin-left: 80%;
   }
+  #Grande img {
+    width: 80vw;
+    height: 48vw;
+  }
+}
+@media only screen and (min-device-width:1280px) {
+
+ 
+  #Grande img {
+    width: 80vw;
+    height: 38vw;
+  }
+}
+@media only screen and (min-device-width:1360px) {
+ 
+  #Grande img {
+ 
+    height: 36vw;
+  }
+  #botao button {
+    width: 8vw;
+  }
+
+}
+@media only screen and (min-device-width:1600px) {
+ 
+  #Grande img {
+ 
+    height: 32vw;
+  }
+  #botao button {
+   
+    width: 6vw;
+  }
 
 }
 
-@media only screen and (max-width:800px) {
+
+@media only screen and (max-device-width:800px) {
   main {
     margin-left: 6px;
 
     width: 95%;
   }
 
-  #Grande {
-    width: 100%;
-  }
 
-  #Grande img {
-    width: 750px;
-  }
-
-  .Subdiv h2 {
-    font-size: 13px;
-  }
-
-  #botao {
-    margin-left: 80%;
-  }
-
-  .Subdiv p {
-    font-size: 2vw;
-  }
-}
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-device-width:600px) {
 
 
   main {
