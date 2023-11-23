@@ -326,8 +326,12 @@ p, h2 {
 
 
 @media only screen and (max-device-width:600px) {
-
-
+#Faraday:hover {
+  animation:none;
+}
+header h3 {
+  font-size: 4vw;
+}
   main {
     margin-left: 0;
     width: 100%;
@@ -353,16 +357,15 @@ p, h2 {
 
   #p1 {
  padding-left: 120px ;
+font-size: 2.5vw;
+ 
   }
 
-  #p2 {
-    margin-left: 3px;
-
-  }
+  
 
   header h3 {
-  flex: 40%;
-  font-size: 11.5px;
+  
+  font-size: 3vw;
   }
 
 
@@ -438,53 +441,50 @@ p, h2 {
 
   }
 
-  #Grande img {
-    width: 100%;
-  }
+  
 
   #Grande {
-    height: 300px;
-    margin-bottom: 15px;
+    height: 600px;
+    margin-bottom: 0px;
     width: 100%;
   }
 
   #Grande img {
     width: 100%;
-    height: 300px;
+    height: 600px;
   }
 
-  .carousel-control-prev {}
-
-  #botao button {
-    width: auto;
-    height: auto;
+  .carousel-control-prev-icon,.carousel-control-next-icon
+  {
+   width: 60px;
+   height: 60px;
 
   }
 
-
+  
   .Subdiv p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   #botao {
     display: flex;
     flex-direction: row;
-
+margin-top: 8px;
 
 
   }
 
   #botao button {
-
+    font-size: 3.6vw;
     height: 6vw;
+    width: auto;
+    height: auto;
   }
-
-  #myBtn {
-    display: none;
-    bottom: 0;
-    right: 0;
-    font-size: 0;
-    padding: 0;
-
-  }
+.carousel-caption h3  {
+  font-size: 4vw;
+}
+.carousel-caption p {
+  font-size: 3vw;
+}
+ 
 }
